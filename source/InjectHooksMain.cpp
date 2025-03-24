@@ -681,6 +681,7 @@ void InjectHooksMain() {
     COcclusion::InjectHooks();
     COccluder::InjectHooks();
     CActiveOccluder::InjectHooks();
+    CAttractorScanner::InjectHooks();
     CGarage::InjectHooks();
     CGarages::InjectHooks();
     CPostEffects::InjectHooks();

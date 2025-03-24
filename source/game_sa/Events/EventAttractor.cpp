@@ -50,9 +50,9 @@ bool CEventAttractor::AffectsPed(CPed* ped) {
             {
                 if (m_bAvoidLookingAtAttractor)
                     return true;
-                if (CGeneral::GetRandomNumberInRange(0, 100) >= m_2dEffect->m_nPedExistingProbability)
+                if (CGeneral::GetRandomNumberInRange(0, 100) >= m_2dEffect->m_interest)
                     return false;
-                if (CGeneral::GetRandomNumberInRange(0, 100) >= m_2dEffect->field_36)
+                if (CGeneral::GetRandomNumberInRange(0, 100) >= m_2dEffect->m_lookAt)
                     return true;
                 if (!g_ikChainMan.IsLooking(ped)) {
                     uint32 time = CGeneral::GetRandomNumberInRange(2000, 4000);

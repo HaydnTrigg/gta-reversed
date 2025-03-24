@@ -111,8 +111,8 @@ struct tEffectPedAttractor {
     RwV3d             m_vecUseDir;
     RwV3d             m_vecForwardDir;
     ePedAttractorType m_nAttractorType;
-    uint8             m_nPedExistingProbability;
-    uint8             field_36;
+    uint8             m_interest;
+    uint8             m_lookAt;
     uint8             m_nFlags;
     char              m_szScriptName[8];
 };

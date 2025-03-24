@@ -545,12 +545,13 @@ void CPedIntelligence::FlushImmediately(bool bSetPrimaryDefaultTask) {
 
 // 0x6018D0
 C2dEffect* CPedIntelligence::GetEffectInUse() const {
-    return m_eventScanner.m_attractorScanner.m_pEffectInUse;
+    C2dEffect* effect = m_eventScanner.m_attractorScanner.GetEffectInUse();
+    return effect;
 }
 
 // 0x6018E0
 void CPedIntelligence::SetEffectInUse(C2dEffect* effect) {
-    m_eventScanner.m_attractorScanner.m_pEffectInUse = effect;
+    m_eventScanner.m_attractorScanner.SetEffectInUse(effect);
 }
 
 // 0x6018F0

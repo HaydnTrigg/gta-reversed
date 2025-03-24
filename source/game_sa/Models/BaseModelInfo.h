@@ -139,6 +139,7 @@ public:
     void SetColModel(CColModel* colModel, bool bIsLodModel = false);
     void Init2dEffects();
     void DeleteCollisionModel();
+    int32 GetNum2dEffects();
     // index is a number of effect (max number is (m_n2dfxCount - 1))
     C2dEffect* Get2dEffect(int32 index) const; // todo: change ret type to `C2dEffectBase*`
     auto Get2dEffects() {
